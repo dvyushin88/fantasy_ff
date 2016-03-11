@@ -9,13 +9,15 @@ $params = ArrayHelper::merge(
 
 $config = [
     'id' => 'app',
+    'defaultRoute' => 'main/default/index',
     'components' => [
         'user' => [
-            'identityClass' => 'app\models\User',
+            'identityClass' => 'app\modules\user\models\User',
             'enableAutoLogin' => true,
+            'loginUrl' => ['user/default/login'],
         ],
         'errorHandler' => [
-            'errorAction' => 'site/error',
+            'errorAction' => 'main/default/error',
         ],
         'request' => [
             'cookieValidationKey' => '',
@@ -36,6 +38,7 @@ if (YII_ENV_DEV) {
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',
+        'allowedIPs' => ['127.0.0.1', '::1', '10.0.12.57']
     ];
 }
 
