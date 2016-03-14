@@ -8,6 +8,8 @@ $params = ArrayHelper::merge(
 );
 
 return [
+    'name' => 'FantasyES',
+    'language'=>'ru',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'modules' => [
@@ -46,6 +48,14 @@ return [
         ],
         'log' => [
             'class' => 'yii\log\Dispatcher',
+        ],
+        'i18n' => [
+            'translations' => [
+                'app' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'forceTranslation' => true,
+                ],
+            ],
         ],
     ],
     'params' => $params,
