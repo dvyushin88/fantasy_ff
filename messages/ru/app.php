@@ -6,6 +6,7 @@ return [
     'NAV_LOGIN' => 'Вход',
     'NAV_PROFILE' => 'Профиль',
     'NAV_LOGOUT' => 'Выход',
+    'TITLE_UPDATE' => 'Редактирование',
 
     'BUTTON_SEND' => 'Отправить',
     'BUTTON_SAVE' => 'Сохранить',
@@ -17,6 +18,13 @@ return [
     'USER_USERNAME' => 'Пользователь',
     'USER_PASSWORD' => 'Пароль',
     'USER_REMEMBER_ME' => 'Запомнить меня',
+    'USER_NEW_PASSWORD' => 'Новый пароль',
+    'USER_REPEAT_PASSWORD' => 'Повторите пароль',
+    'USER_CURRENT_PASSWORD' => 'Текущий пароль',
+    'ERROR_WRONG_CURRENT_PASSWORD' => 'Неправильный пароль',
+    'TITLE_PASSWORD_CHANGE' => 'Смена пароля',
+    'LINK_PASSWORD_CHANGE' => 'Сменить пароль',
+
 
     'HELLO {username}' => 'Здравствуйте, {username}!',
     'FOLLOW_TO_RESET_PASSWORD' => 'Для смены пароля пройдите по ссылке:',
@@ -28,4 +36,6 @@ return [
     'PLEASE_FILL_FOR_SIGNUP' => 'Заполните поля для регистрации на сайте',
     'TITLE_REQUEST_RESET_PASSWORD' => 'Сбросить пароль',
     'PLEASE_FILL_FOR_RESET_REQUEST' => 'Введите email для сброса пароля',
+    'ERROR_USERNAME_EXISTS' => 'Это имя пользователя уже используется',
+    'ERROR_EMAIL_EXISTS' => 'Этот email адрес уже используется',
 ];
