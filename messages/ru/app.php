@@ -6,6 +6,7 @@ return [
     'NAV_LOGIN' => 'Вход',
     'NAV_PROFILE' => 'Профиль',
     'NAV_LOGOUT' => 'Выход',
+    'NAV_ADMIN' => 'Админка',
     'TITLE_UPDATE' => 'Редактирование',
 
     'BUTTON_SEND' => 'Отправить',
@@ -24,7 +25,9 @@ return [
     'ERROR_WRONG_CURRENT_PASSWORD' => 'Неправильный пароль',
     'TITLE_PASSWORD_CHANGE' => 'Смена пароля',
     'LINK_PASSWORD_CHANGE' => 'Сменить пароль',
+    'CREATE_USER' => 'Создать пользователя',
 
+    'ADMIN_USERS' => 'Пользователи',
 
     'HELLO {username}' => 'Здравствуйте, {username}!',
     'FOLLOW_TO_RESET_PASSWORD' => 'Для смены пароля пройдите по ссылке:',
