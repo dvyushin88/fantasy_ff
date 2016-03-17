@@ -1,7 +1,7 @@
 <?php
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap\ActiveForm */
-/* @var $model app\modules\user\models\ResetPasswordForm */
+/* @var $model app\modules\user\models\PasswordResetForm */
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 $this->title = Yii::t('app', 'TITLE_RESET_PASSWORD');
