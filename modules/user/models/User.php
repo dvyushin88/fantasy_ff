@@ -2,6 +2,7 @@
 
 namespace app\modules\user\models;
 
+use app\modules\user\models\query\UserQuery;
 use Yii;
 use yii\base\NotSupportedException;
 use yii\behaviors\TimestampBehavior;
@@ -121,6 +122,15 @@ class User extends ActiveRecord implements IdentityInterface
         return [
             TimestampBehavior::className(),
         ];
+    }
+
+    /**
+     * @return UserQuery
+     * @throws \yii\base\InvalidConfigException
+     */
+    public static function find()
+    {
+        return Yii::createObject(UserQuery::className(), [get_called_class()]);
     }
 
     public static function findIdentity($id)
