@@ -10,6 +10,16 @@ use yii\base\Model;
 class PasswordResetRequestForm extends Model
 {
     public $email;
+
+    private $_user = false;
+    private $_timeout;
+
+    public function __construct($timeout, $config = [])
+    {
+        $this->_timeout = $timeout;
+        parent::__construct($config);
+    }
+
     /**
      * @inheritdoc
      */
@@ -42,7 +52,7 @@ class PasswordResetRequestForm extends Model
             return false;
         }
 
-        if (!User::isPasswordResetTokenValid($user->password_reset_token)) {
+        if (!User::isPasswordResetTokenValid($user->password_reset_token, $this->_timeout)) {
             $user->generatePasswordResetToken();
         }
 
